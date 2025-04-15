@@ -62,7 +62,21 @@ extern int yydebug;
     MINUS = 263,                   /* MINUS  */
     MULTIPLY = 264,                /* MULTIPLY  */
     DIVIDE = 265,                  /* DIVIDE  */
-    SEMICOLON = 266                /* SEMICOLON  */
+    SEMICOLON = 266,               /* SEMICOLON  */
+    IF = 267,                      /* IF  */
+    ELSE = 268,                    /* ELSE  */
+    WHILE = 269,                   /* WHILE  */
+    FOR = 270,                     /* FOR  */
+    SWITCH = 271,                  /* SWITCH  */
+    CASE = 272,                    /* CASE  */
+    DEFAULT = 273,                 /* DEFAULT  */
+    BREAK = 274,                   /* BREAK  */
+    EQ = 275,                      /* EQ  */
+    NE = 276,                      /* NE  */
+    LT = 277,                      /* LT  */
+    GT = 278,                      /* GT  */
+    LE = 279,                      /* LE  */
+    GE = 280                       /* GE  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -76,7 +90,7 @@ union YYSTYPE
     int num;
     char* id;
 
-#line 80 "parser.tab.h"
+#line 94 "parser.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
